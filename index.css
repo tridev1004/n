@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty:#e0e0e0;
+}
+
+body{
+    background-color: #fff5c8a3;
+    
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+/* overflow: hidden; */
+margin: 0;
+}
+
+h1{
+
+    color: rgb(98, 98, 25);
+    /* text-size-adjust: 500%; */
+         font-size: 5rem;
+}
+
+.div2{
+    width: 50%;
+    /* margin:auto */
+    margin-top: 38%;
+    /* margin: 100px auto 100px auto; */
+    text-align:left;
+    line-height: 2;
+    /* position: relative; */
+    /* bottom: 35%; */
+}
+.div3{
+    /* margin-right: 14%;
+   position: relative;
+   bottom: 6%;  */margin-top: 50px;
+}
+.div4{
+    position: relative;
+    bottom: 52vh;
+    left: 14%;
+}
+.toogle{
+    /* margin-bottom: 40rem; */
+    position: relative;
+    /* bottom: 30%; */
+    right: 25%; 
+    
+} 
+.eightsix{
+    position: relative;
+    bottom: 40%;
+    left: 8%
+}
+.threeseven{
+    position: relative;
+    bottom: 30%;
+    left: 14%;
+padding-bottom: 4%;    
+}
+
+
+
+.container{
+    text-align: center;
+    display: block;
+    margin: 0% 0% 0% 0%;
+    height: 14vh;
+}
+
+.progress-container{
+    /* display: flex; */
+    justify-content: space-between;
+    position: relative;
+    /* margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+    left: 16rem; */
+    bottom: 33rem;
+    left: 44vw;
+}  
+
+.progress-container::before{
+    content:'';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1%;
+    transition: 0.4s ease;
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1%;
+    transition: 0.4s ease;
+}
+
+.circle{
+    background-color: rgba(37, 18, 185, 0.67);
+    color: rgb(240, 246, 240);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border:3px solid var(--line-border-empty);
+    transition:.4s ease;
+
+}
+
+.circle.active{
+    border-color:var(--line-border-fill);
+}
+
